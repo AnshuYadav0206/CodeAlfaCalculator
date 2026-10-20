@@ -1,6 +1,7 @@
  Calculator Web Application 
 
-This repository contains the implementation of Task 2 for the CodeAlfa Web Development Internship. It is a functional calculator built using standard HTML5, CSS3, and JavaScript.
+This repository contains the implementation of Task 
+for the CodeAlfa Web Development Internship. It is a functional calculator built using standard HTML5, CSS3, and JavaScript.
 
 ## Project Overview
 
