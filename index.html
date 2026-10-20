@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator - Task 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="calculator-wrapper">
+    <div class="calculator" id="calculator">
+      <div class="calculator-header">
+        <span class="calculator-title">Calculator</span>
+        <button type="button" id="historyToggleBtn" class="header-action-btn" aria-label="Toggle calculation history">
+          History
+        </button>
+      </div>
+
+      <div class="display-container" aria-live="polite">
+        <div class="expression-line" id="expressionDisplay"></div>
+        <div class="current-line" id="currentDisplay">0</div>
+        <div class="preview-line" id="previewDisplay"></div>
+      </div>
+
+      <div class="keypad" role="grid">
+        <button type="button" class="btn btn-action" data-action="clear" data-key="Escape">AC</button>
+        <button type="button" class="btn btn-action" data-action="delete" data-key="Backspace">DEL</button>
+        <button type="button" class="btn btn-action" data-action="percent" data-key="%">%</button>
+        <button type="button" class="btn btn-operator" data-action="operator" data-value="/" data-key="/">÷</button>
+
+        <button type="button" class="btn btn-number" data-action="number" data-value="7" data-key="7">7</button>
+        <button type="button" class="btn btn-number" data-action="number" data-value="8" data-key="8">8</button>
+        <button type="button" class="btn btn-number" data-action="number" data-value="9" data-key="9">9</button>
+        <button type="button" class="btn btn-operator" data-action="operator" data-value="*" data-key="*">×</button>
+
+        <button type="button" class="btn btn-number" data-action="number" data-value="4" data-key="4">4</button>
+        <button type="button" class="btn btn-number" data-action="number" data-value="5" data-key="5">5</button>
+        <button type="button" class="btn btn-number" data-action="number" data-value="6" data-key="6">6</button>
+        <button type="button" class="btn btn-operator" data-action="operator" data-value="-" data-key="-">-</button>
+
+        <button type="button" class="btn btn-number" data-action="number" data-value="1" data-key="1">1</button>
+        <button type="button" class="btn btn-number" data-action="number" data-value="2" data-key="2">2</button>
+        <button type="button" class="btn btn-number" data-action="number" data-value="3" data-key="3">3</button>
+        <button type="button" class="btn btn-operator" data-action="operator" data-value="+" data-key="+">+</button>
+
+        <button type="button" class="btn btn-action" data-action="negate" data-key="±">+/-</button>
+        <button type="button" class="btn btn-number" data-action="number" data-value="0" data-key="0">0</button>
+        <button type="button" class="btn btn-number" data-action="decimal" data-value="." data-key=".">.</button>
+        <button type="button" class="btn btn-equals" data-action="equals" data-key="Enter">=</button>
+      </div>
+
+      <div class="history-container" id="historyContainer">
+        <div class="history-top">
+          <span class="history-heading">Recent Calculations</span>
+          <button type="button" id="clearHistoryBtn" class="clear-history-btn">Clear History</button>
+        </div>
+        <div class="history-list" id="historyList">
+          <div class="history-placeholder">No recent calculations</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keyboard-guide">
+      <p>Keyboard Support: Numbers [0-9], Operators [+, -, *, /], Equals [Enter], Clear [Esc], Delete [Backspace]</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
